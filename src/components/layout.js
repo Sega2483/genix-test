@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => {
               }
             }
           }
-         allDatoCmsCustomerReview(sort: { fields: [position], order: ASC }) {
+         allDatoCmsCustomerReview {
             edges {
               node {
                 customerName  
