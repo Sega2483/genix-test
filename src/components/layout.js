@@ -89,6 +89,15 @@ const TemplateWrapper = ({ children }) => {
                   </a>
                 ))}
               </p>
+                <p className="sidebar__social">
+                    {data.allDatoCmsCustomerReview.edges.map(({node: customerReview}) => (
+                        <div>
+                            {customerReview.customerName}
+                            <br/>
+                            {customerReview.review}
+                        </div>
+                    ))}
+                </p>
               <div className="sidebar__copyright">
                 {data.datoCmsHome.copyright}
               </div>
