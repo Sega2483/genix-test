@@ -102,7 +102,7 @@ const TemplateWrapper = ({ children }) => {
                 </div>
               </div>
             </div>
-            {children}
+            Content! {children}
           </div>
         </div>
       )}
