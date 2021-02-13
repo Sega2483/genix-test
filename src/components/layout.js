@@ -112,10 +112,10 @@ const TemplateWrapper = ({ children }) => {
             </div>
             {children}
           </div>
+            <h1>Customer Reviews</h1>
             {data.allDatoCmsCustomerReview.edges.map(({node: customerReview}) => (
                 <div>
-                    {customerReview.customerName}
-                    <br/> <br/>
+                    <h6>{customerReview.customerName}</h6>
                     {customerReview.review}
                 </div>
             ))}
